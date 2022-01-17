@@ -49,4 +49,4 @@ we will test our game number_test times
     return mid_counts
 
 
-print(f'average tries to guess the number is {game_test(1000)}')
+print(f'average tries to guess the number is {game_test(1000)} ')
