@@ -40,7 +40,7 @@ return number of iterations required to guess a number / print number {number_to
 def game_test(number_test):
     """
 arg: int number -> how many tests should program make
-return average umber of iterations required to guess a number
+return average number of iterations required to guess a number
     """
     count_list = []  # make a list to save our tries
     test = (number for number in range(number_test))  # generator for test
