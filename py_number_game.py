@@ -6,7 +6,7 @@ max_boundary = int(input('max boundary to guess  '))  # setting boundaries for r
 
 def number_create():
     """
-creating random number
+return created random number
     """
     random_number = rnd.randint(min_boundary, max_boundary)
     return random_number
@@ -17,6 +17,8 @@ def number_guess():
 guessing the number. we will use Divide and Conquer Algorithm
 the main point is to divide big problem in 2 sub-problems until they become easy to solve.
 in our case we are going to  divide guessing range by 2 and move to the next sub-problem
+
+return number of iterations required to guess a number / print number {number_to_guess} guessed in {count} iterations
     """
     count = 0  # variable for counting tries
     min_number, max_number = min_boundary, max_boundary
@@ -37,7 +39,8 @@ in our case we are going to  divide guessing range by 2 and move to the next sub
 
 def game_test(number_test):
     """
-we will test our game number_test times
+arg: int number -> how many tests should program make
+return average umber of iterations required to guess a number
     """
     count_list = []  # make a list to save our tries
     test = (number for number in range(number_test))  # generator for test
